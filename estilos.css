@@ -29,13 +29,13 @@ nav ul {
   gap: 30px;
 }
 nav li {
-  list-style: none; 
+list-style: none; 
 }
 nav a {
-  text-decoration: none; 
-  color: #187277;
-  font-weight: 500;
-  transition: color 0.3s ease; 
+text-decoration: none; 
+color: #187277;
+font-weight: 500;
+transition: color 0.3s ease; 
 }
 nav a:hover {
   color: #41e700; /* efecto hover */
@@ -45,7 +45,9 @@ nav a:hover {
   height: 40px;
   border-radius: 50%; 
   object-fit: cover;  
-  margin:65%;
+  margin-left:auto;
+  margin-right:20px;
+
 }
 
 .principal{
@@ -86,7 +88,7 @@ nav a:hover {
   width: 198px;
   height:30px; 
 }
-.canbiar-color{
+.cambiar-color{
     color:#00DBE7;
 }
 
@@ -121,16 +123,8 @@ nav a:hover {
     margin-right:20px;
 
 }
-.botones-izquierdo-centro  {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight:400;
-    font-size:18px;
-    line-height:27px;
-    letter-spacing: 0.9px;
-    color:#002022;
-    
-}
-.titulo-contenedor-botones a{
+
+.botones-centro{
     text-decoration: none;
 }
 
@@ -256,7 +250,7 @@ color:#00DBE7;
 }
 .cartelera-info h2{
     font-family: 'Courier New', Courier, monospace;
-    font-weight:600px;
+    font-weight:600;
     font-size:28px;
     line-height:35px;
     letter-spacing: 0px;
@@ -264,7 +258,7 @@ color:#00DBE7;
 }
 .cartelera-info h4{
     font-family:'Courier New', Courier, monospace;
-    font-weight:400px;
+    font-weight:400;
     font-size:11px;
     line-height:16.5px;
     letter-spacing:1.1px;
@@ -283,7 +277,7 @@ color:#00DBE7;
   
     border:1px solid #00DBE766;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight:400px;
+    font-weight:400;
     font-size:11px;
     line-height:16.5px;
     letter-spacing:2.2px;
@@ -293,7 +287,8 @@ color:#00DBE7;
 }*/*este es otro*/
 
 .caja-opcional{
-    width:1920px;
+    width:100%; 
+    max-width:1920px;
     height:560px;
      background-color:#0F1127;
     padding:120px 448px 120px 448px;
@@ -342,7 +337,7 @@ color:#00DBE7;
      background-color:#FFFFFF1A;
      display: flex;
      border-radius: 8px;
-     border:1p  weight;
+     border:1px solid blue;
   padding:8px;
   gap:24px;
 }
@@ -386,7 +381,8 @@ color:#00DBE7;
 }
 
 footer {
-  width:1920px ;              
+ width:100%; 
+ max-width:1920px;           
   background-color: #0F1127;    
   padding: 30px;
   display: flex;
