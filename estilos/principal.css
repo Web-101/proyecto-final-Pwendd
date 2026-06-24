@@ -75,7 +75,7 @@
 
 }
 
-.contenedor1 {
+#contenedor1 {
     width: 298px;
     height: 61px;
     background-color: #00DBE7;
@@ -92,19 +92,3 @@
 
 }
 
-
-.contenedor2 {
-    width: 207px;
-    height: 61px;
-    border-radius: 2px;
-    padding: 16.5px 40px 17.5px 40px;
-    margin-right: 20px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.9px;
-    color: #00DBE7;
-
-}

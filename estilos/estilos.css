@@ -55,7 +55,6 @@ body{
     justify-content: space-between;
     opacity: 0.9;
     background-size: cover;
-    background-position: center;
     box-sizing: border-box;
 
 }
@@ -181,7 +180,7 @@ body{
     color: gray;
 }
 
-.button {
+.btn-reserva {
     width: 352px;
     height: 43px;
     background-color: darkslategrey;
