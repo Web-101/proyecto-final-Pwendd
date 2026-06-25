@@ -31,3 +31,19 @@ footer p a {
     gap: 15px;
     margin-top: 30px;
 }
+
+.pagina {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #00DBE7;
+    text-align: center;
+}
+
+.pagina p,
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: center;
+
+}

@@ -23,17 +23,11 @@ body {
 }
 
 .titulo {
-    width: 565px;
-    height: 56px;
     font-family: 'Sora', sans-serif;
     font-weight: bold;
     font-style: normal;
-    line-height: 56px;
     font-size: 49px;
-    letter-spacing: -1.2px;
     color: ghostwhite;
-
-
 
 }
 
@@ -104,13 +98,11 @@ body {
 }
 
 .cartelera-header {
-    width: 120px;
     height: 25px;
     border-radius: 2px;
     background-color: #0F0026E5;
-    padding-top: 4px;
+    padding-top: 7px;
     padding-right: 12px;
-    padding-bottom: 4px;
     padding-left: 12px;
     display: flex;
     margin-top: 10%;
@@ -153,10 +145,8 @@ body {
 }
 
 .pelicula {
-    font-weight: 600px;
     font-size: 28px;
     line-height: 35px;
-    letter-spacing: 0px;
     color: beige;
 }
 
@@ -173,9 +163,6 @@ body {
     background-color: darkslategrey;
     border: 1px solid #00DBE766;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400px;
-    font-size: 11px;
-    line-height: 16.5px;
     letter-spacing: 2.2px;
     color: #00DBE7;
 
@@ -202,28 +189,15 @@ body {
 
 
 #santuario {
-    height: 56px;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: Center;
-    font-weight: 700;
     font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -1.44px;
     color: #00DBE7;
 }
 
 
 
 #unete {
-    width: 672px;
-    height: 65px;
     max-width: 672px;
-    font-weight: 400;
-    font-size: 15px;
     line-height: 32.5px;
-    letter-spacing: 0px;
     color: #CCC4CE;
     text-align: center;
 
@@ -231,12 +205,9 @@ body {
 }
 
 .contenedor-botones {
-    width: 768px;
-    height: 85px;
     background-color: #FFFFFF1A;
     display: flex;
     border-radius: 8px;
-    border: 1p weight;
     padding: 8px;
     gap: 24px;
 
@@ -254,25 +225,18 @@ body {
 .btn-subs {
     width: 240px;
     height: 67px;
-    padding: 20px 48px 20px 48px;
     border-radius: 2px;
     background-color: Turquoise;
-    color: #00DBE7;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 10px;
-    line-height: 27px;
     letter-spacing: 1.8px;
     color: #002022;
 }
 
 .conexion {
-    width: 357px;
     height: 15px;
-    display: flex;
     text-align: center;
-    font-weight: 400;
     font-size: 20px;
-    line-height: 15px;
     letter-spacing: 3px;
     color: #958E98;
 }
