@@ -1,3 +1,33 @@
-.footer-capa {
-    background-color: rgb(74, 129, 192);
+footer {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #141734;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    border-top: 1px solid #00DBE7;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #00DBE7;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    margin: 5px 0;
+    text-align: center;
+    color: white;
+}
+
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
 }

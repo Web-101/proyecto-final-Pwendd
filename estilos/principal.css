@@ -17,6 +17,19 @@
     align-items: center;
 }
 
+#menu{
+    width:298px;
+    height:61px;
+    font-weight: 700;
+     background-color: #d81d87;
+    border-radius:4px;
+    padding: 16.5px 40px 17.5px 40px ;
+    border:1px solid #00DBE7;
+    margin-right:20px;
+    color: #CCC4CE;
+    text-decoration: none;
+    text-align: center;
+}
 
 .contenedor-centro {
     width: 930.67px;
@@ -30,16 +43,16 @@
 .titulocentro {
     width: 198px;
     height: 30px;
-    background-color: #00DBE74D;
+    background-color: #006b71d9;
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 4.8px;
     align-items: center;
-    color: #00DBE7;
+    color: #00dae6;
 }
 
 
@@ -56,13 +69,12 @@
 .titulo-contenedor-concepto {
     width: 661px;
     height: 98px;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 17px;
     line-height: 32.5px;
     letter-spacing: 0px;
     color: #CCC4CE;
-
-
+    background-color: rgb(0, 0, 0,0.3);
 }
 
 .titulo-contenedor-botones {
