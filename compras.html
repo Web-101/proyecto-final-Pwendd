@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <title>Compras</title>
+
+
+
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="pagina-compras">
+
+        <section class="resumen-compra">
+            <h1>Resumen del pedido</h1>
+            <p><strong>Película:</strong> <span id="peliculaResumen"></span></p>
+            <p><strong>Función:</strong> <span id="funcionResumen"></span></p>
+            <p><strong>Asientos:</strong> <span id="asientosResumen"></span></p>
+            <p><strong>Total:</strong> <span id="totalResumen"></span></p>
+        </section>
+
+        <form id="formularioCompra" class="formulario-compra">
+            <h2>Datos del cliente</h2>
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Ej: Marco Virales" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+            <label for="telefono">Teléfono opcional</label>
+            <input type="tel" id="telefono" placeholder="Ej: 70000000">
+
+            <button type="submit">FINALIZAR COMPRA</button>
+        </form>
+
+        <section id="confirmacion" class="confirmacion">
+            <div class="exito">
+                <div class="centro">✓</div>
+                <h1 id="mensajeGracias"></h1>
+
+            </div>
+
+            <section class="ticket">
+                <article class="datos-ticket">
+                    <h2 id="tituloTicket"></h2>
+                    <p><strong>Función:</strong> <span id="funcionTicket"></span></p>
+                    <p><strong>Butacas:</strong> <span id="butacasTicket"></span></p>
+                    <p><strong>Total:</strong> <span id="totalTicket"></span></p>
+                    <p><strong>Correo:</strong> <span id="correoTicket"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="telefonoTicket"></span></p>
+                    <a href="index.html" class="volver">VOLVER AL INICIO</a>
+                </article>
+
+                <img id="imagenTicket" src="" alt="Película">
+
+                <article class="qr">
+                    <img src="img/login.jpg" alt="Código QR">
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/index.js"></script>
+
+    <script src="js/compras.js"></script>
+
+</body>
+
+</html>

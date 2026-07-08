@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butacas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/butaca.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="pagina-butaca">
+        <section class="titulo-butaca">
+            <span>SELECCIONA TUS ASIENTOS PARA</span>
+            <h1 id="tituloPelicula">ZEUS: ASCENSIÓN DIGITAL</h1>
+            <p id="infoFuncion">IMAX 3D · 14:30</p>
+        </section>
+
+        <section class="zona-butacas">
+            <article class="sala">
+                <div class="pantalla">PANTALLA</div>
+
+                <div class="mapa" id="mapaButacas">
+
+                    <div class="butaca">A1</div>
+                    <div class="butaca">A2</div>
+                    <div class="butaca ocupada">A3</div>
+                    <div class="butaca">A4</div>
+                    <div class="butaca">A5</div>
+                    <div class="butaca">A6</div>
+                    <div class="butaca">A7</div>
+                    <div class="butaca">A8</div>
+
+                    <div class="butaca">B1</div>
+                    <div class="butaca">B2</div>
+                    <div class="butaca">B3</div>
+                    <div class="butaca ocupada">B4</div>
+                    <div class="butaca">B5</div>
+                    <div class="butaca">B6</div>
+                    <div class="butaca">B7</div>
+                    <div class="butaca">B8</div>
+
+                    <div class="butaca">C1</div>
+                    <div class="butaca">C2</div>
+                    <div class="butaca ocupada">C3</div>
+                    <div class="butaca">C4</div>
+                    <div class="butaca">C5</div>
+                    <div class="butaca">C6</div>
+                    <div class="butaca">C7</div>
+                    <div class="butaca">C8</div>
+
+                    <div class="butaca">D1</div>
+                    <div class="butaca">D2</div>
+                    <div class="butaca">D3</div>
+                    <div class="butaca">D4</div>
+                    <div class="butaca ocupada">D5</div>
+                    <div class="butaca">D6</div>
+                    <div class="butaca">D7</div>
+                    <div class="butaca">D8</div>
+
+                    <div class="butaca">E1</div>
+                    <div class="butaca">E2</div>
+                    <div class="butaca">E3</div>
+                    <div class="butaca">E4</div>
+                    <div class="butaca">E5</div>
+                    <div class="butaca ocupada">E6</div>
+                    <div class="butaca">E7</div>
+                    <div class="butaca">E8</div>
+
+                </div>
+
+                <div class="botones">
+                    <span><i class="libre"></i> Disponible</span>
+                    <span><i class="seleccionada"></i> Seleccionada</span>
+                    <span><i class="ocupada"></i> Ocupada</span>
+                </div>
+            </article>
+
+            <aside class="resumen-butaca">
+                <img id="posterPelicula" src="img/foto2.png" alt="Poster">
+                <h2 id="nombreResumen">ZEUS: ASCENSIÓN DIGITAL</h2>
+                <p id="detalleResumen">15 · 14:30 · IMAX 3D</p>
+                <p>Butacas: <strong id="butacasSeleccionadas">Ninguna</strong></p>
+                <p>Total: <strong id="total">0 Bs</strong></p>
+                <button id="continuarCompras">CONTINUAR COMPRA</button>
+            </aside>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/index.js"></script>
+
+    <script src="js/butaca.js"></script>
+
+</body>
+
+</html>
