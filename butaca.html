@@ -4,99 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butacas</title>
+    <title>Selección de butacas</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/butaca.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <div id="header"></div>
 
+    <!-- Contenido principal -->
     <main class="pagina-butaca">
+
+        <!-- Título -->
         <section class="titulo-butaca">
             <span>SELECCIONA TUS ASIENTOS PARA</span>
-            <h1 id="tituloPelicula">ZEUS: ASCENSIÓN DIGITAL</h1>
-            <p id="infoFuncion">IMAX 3D · 14:30</p>
+            <h1 id="tituloPelicula"></h1>
+            <p id="infoFuncion"></p>
         </section>
 
+        <!-- Zona de butacas -->
         <section class="zona-butacas">
+
+            <!-- Sala con mapa de asientos -->
             <article class="sala">
+
+                <!-- Pantalla -->
                 <div class="pantalla">PANTALLA</div>
 
-                <div class="mapa" id="mapaButacas">
-
+                <!-- Mapa de butacas -->
+                <div class="mapa">
+                    <!-- Fila A -->
                     <div class="butaca">A1</div>
                     <div class="butaca">A2</div>
-                    <div class="butaca ocupada">A3</div>
+                    <div class="butaca">A3</div>
                     <div class="butaca">A4</div>
                     <div class="butaca">A5</div>
                     <div class="butaca">A6</div>
-                    <div class="butaca">A7</div>
+                    <div class="butaca ocupada">A7</div>
                     <div class="butaca">A8</div>
 
+                    <!-- Fila B -->
                     <div class="butaca">B1</div>
                     <div class="butaca">B2</div>
                     <div class="butaca">B3</div>
-                    <div class="butaca ocupada">B4</div>
+                    <div class="butaca">B4</div>
                     <div class="butaca">B5</div>
                     <div class="butaca">B6</div>
                     <div class="butaca">B7</div>
                     <div class="butaca">B8</div>
 
+                    <!-- Fila C -->
                     <div class="butaca">C1</div>
                     <div class="butaca">C2</div>
-                    <div class="butaca ocupada">C3</div>
+                    <div class="butaca">C3</div>
                     <div class="butaca">C4</div>
                     <div class="butaca">C5</div>
                     <div class="butaca">C6</div>
                     <div class="butaca">C7</div>
                     <div class="butaca">C8</div>
 
+                    <!-- Fila D -->
                     <div class="butaca">D1</div>
                     <div class="butaca">D2</div>
                     <div class="butaca">D3</div>
                     <div class="butaca">D4</div>
-                    <div class="butaca ocupada">D5</div>
+                    <div class="butaca">D5</div>
                     <div class="butaca">D6</div>
                     <div class="butaca">D7</div>
                     <div class="butaca">D8</div>
 
+                    <!-- Fila E -->
                     <div class="butaca">E1</div>
                     <div class="butaca">E2</div>
                     <div class="butaca">E3</div>
                     <div class="butaca">E4</div>
                     <div class="butaca">E5</div>
-                    <div class="butaca ocupada">E6</div>
+                    <div class="butaca">E6</div>
                     <div class="butaca">E7</div>
                     <div class="butaca">E8</div>
 
+                    <!-- Fila F -->
+                    <div class="butaca">F1</div>
+                    <div class="butaca">F2</div>
+                    <div class="butaca">F3</div>
+                    <div class="butaca">F4</div>
+                    <div class="butaca">F5</div>
+                    <div class="butaca">F6</div>
+                    <div class="butaca">F7</div>
+                    <div class="butaca">F8</div>
+
+                    <!-- Fila G -->
+                    <div class="butaca">G1</div>
+                    <div class="butaca">G2</div>
+                    <div class="butaca">G3</div>
+                    <div class="butaca">G4</div>
+                    <div class="butaca">G5</div>
+                    <div class="butaca">G6</div>
+                    <div class="butaca">G7</div>
+                    <div class="butaca">G8</div>
+
+                    <!-- Fila H -->
+                    <div class="butaca">H1</div>
+                    <div class="butaca">H2</div>
+                    <div class="butaca">H3</div>
+                    <div class="butaca">H4</div>
+                    <div class="butaca">H5</div>
+                    <div class="butaca">H6</div>
+                    <div class="butaca">H7</div>
+                    <div class="butaca">H8</div>
                 </div>
 
-                <div class="botones">
-                    <span><i class="libre"></i> Disponible</span>
-                    <span><i class="seleccionada"></i> Seleccionada</span>
-                    <span><i class="ocupada"></i> Ocupada</span>
+                <!-- Leyenda -->
+                <div class="leyenda">
+                    <div><span class="estado libre"></span>Disponible</div>
+                    <div><span class="estado seleccionada"></span>Seleccionada</div>
+                    <div><span class="estado ocupada"></span>Ocupada</div>
                 </div>
             </article>
 
+            <!-- Resumen de compra -->
             <aside class="resumen-butaca">
-                <img id="posterPelicula" src="img/foto2.png" alt="Poster">
-                <h2 id="nombreResumen">ZEUS: ASCENSIÓN DIGITAL</h2>
-                <p id="detalleResumen">15 · 14:30 · IMAX 3D</p>
+                <img id="posterPelicula" alt="Póster de la película">
+                <h2 id="nombreResumen"></h2>
+                <p id="detalleResumen"></p>
+
                 <p>Butacas: <strong id="butacasSeleccionadas">Ninguna</strong></p>
                 <p>Total: <strong id="total">0 Bs</strong></p>
-                <button id="continuarCompras">CONTINUAR COMPRA</button>
+
+                <button type="button" id="continuarCompras">CONTINUAR COMPRA</button>
             </aside>
+
         </section>
     </main>
 
+    <!-- Footer -->
     <div id="footer"></div>
 
+    <!-- Scripts -->
     <script src="js/index.js"></script>
-
     <script src="js/butaca.js"></script>
-
 </body>
 
 </html>

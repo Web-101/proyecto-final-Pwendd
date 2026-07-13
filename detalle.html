@@ -1,103 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='css/detalle.css'>
-    <link rel="stylesheet" href='css/index.css'>
-    <title>Document</title>
+    <title>Detalle de la película</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalle.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <div id="header"></div>
 
 
-    <main class="principal">
+    <main class="principal-detalle">
 
-        <section class="caja-principal1">
-            <img id="foto" alt="foto de prueba">
-            <article class="contenedor-centro">
-                <h2 id="titulo">ZEUS: ASCENSIÓN <span class="cambiar-color">DIGITAL</span></h2>
-                <p id="descripcion-corta">
-                    Presencia la singularidad del Rey de los Dioses. En un mundo donde
-                    el mito y la máquina se fusionan, Zeus se alza no desde el cielo,
-                    sino desde el núcleo de la unidad central universal.
-                </p>
-                <section class="titulo-contenedor-botones">
-                    <a href="comprar.html" class="menu botones-centro">COMPRAR ENTRADAS</a>
-                    <a href="trailes.html" class="menu">VER TRAILES</a>
-                </section>
+
+        <section class="detalle-banner">
+            <img id="foto" class="foto-detalle" alt="Imagen de la película">
+
+            <article class="detalle-banner-contenido">
+                <h1 id="titulo"></h1>
+                <p id="descripcion-corta"></p>
             </article>
         </section>
 
-        <div class="contenedor">
+
+        <section class="contenedor-detalle">
 
 
-            <div class="detalle-peliculas">
+            <article class="informacion-pelicula">
                 <h2>SINOPSIS</h2>
-                <p id="descripcion">Año 2148. La línea entre el mito y la máquina se ha disuelto por completo. Cuando el
-                    controlador maestro Zeus despierta de su estasis milenario dentro de las Puertas de Silicio,
-                    las deidades corporativas de la Nueva Olimpo deben decidir entre la lealtad o la eliminación.</p>
+                <p id="descripcion"></p>
 
-                <div class="pagina-genero">
-                    <div class="pagina">
-                        <h3>DIRECTOR</h3>
-                        <p id="director">ALEXIS VADIM</p>
+                <section class="datos-pelicula">
+                    <div class="dato">
+                        <span>DIRECTOR</span>
+                        <strong id="director"></strong>
                     </div>
-                    <div class="pagina">
-                        <h3>GENERO</h3>
-                        <p id="genero">SCI-FI/ACCION</p>
+                    <div class="dato">
+                        <span>GÉNERO</span>
+                        <strong id="genero"></strong>
                     </div>
-                    <div class="pagina">
-                        <h3>CALIFICACION</h3>
-                        <p id="calificacion">PG-13</p>
+                    <div class="dato">
+                        <span>CLASIFICACIÓN</span>
+                        <strong id="calificacion"></strong>
                     </div>
-                    <div class=" pagina">
-                        <h3>AUDIO</h3>
-                        <p id="audio">DOLBY ATMOS</p>
+                    <div class="dato">
+                        <span>AUDIO</span>
+                        <strong id="audio"></strong>
                     </div>
-                </div>
-            </div>
+                </section>
+            </article>
 
 
-            <aside class="detalle-funciones">
-                <h1>FUNCIONES</h1>
-                <h3>SELECCION FECHA</h3>
-                <div id="fechas" class="fecha">
-                    <button class="boton-fecha">Hoy <span class="resaltador">15</span></button>
-                    <button class="boton-fecha">Sab <span class="resaltador">16</span></button>
-                    <button class="boton-fecha">Dom <span class="resaltador">17</span></button>
-                    <button class="boton-fecha">Lun <span class="resaltador">18</span></button>
-                    <button class="boton-fecha">Mar <span class="resaltador">19</span></button>
+            <aside class="funciones-pelicula">
+                <h2>FUNCIONES DISPONIBLES</h2>
+                <h3>SELECCIONA UNA FECHA</h3>
+
+                <div id="fechas" class="fechas">
+                    <button type="button" class="boton-fecha" data-fecha="15">Hoy <span>15</span></button>
+                    <button type="button" class="boton-fecha" data-fecha="16">Sáb <span>16</span></button>
+                    <button type="button" class="boton-fecha" data-fecha="17">Dom <span>17</span></button>
+                    <button type="button" class="boton-fecha" data-fecha="18">Lun <span>18</span></button>
+                    <button type="button" class="boton-fecha" data-fecha="19">Mar <span>19</span></button>
                 </div>
 
-                <h3>SALA IMAX 3D</h3>
-                <div id="sala-imax" class="horarios">
-                    <button class="boton-fecha"> 14:30</button>
-                    <button class="boton-fecha"> 15:45</button>
-                </div>
-                <h3>SALA DIGITAL</h3>
-                <div id="sala-digital" class="horarios">
-                    <button class="boton-fecha"> 16:50</button>
-                    <button class="boton-fecha"> 11:40</button>
-                    <button class="boton-fecha"> 23:45</button>
-                </div>
-                <a href="butaca.html" class="reservar-ahora">RESERVA AHORA</a>
+
+                <section class="grupo-horarios">
+                    <h3>IMAX 3D</h3>
+                    <div id="horariosImax" class="horarios"></div>
+                </section>
+
+                <section class="grupo-horarios">
+                    <h3>DIGITAL 2D</h3>
+                    <div id="horariosDigital" class="horarios"></div>
+                </section>
             </aside>
 
-        </div>
-
+        </section>
     </main>
+
 
     <div id="footer"></div>
 
-
-    <script src="js/detalle.js"></script>
     <script src="js/index.js"></script>
-
-
+    <script src="js/detalle.js"></script>
 </body>
 
 </html>

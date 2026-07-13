@@ -1,91 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 375px) {
+
+    .pagina-compras {
+        width: 100%;
+
+        padding: 30px 15px;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+    }
+
+
+    /* RESUMEN */
+
+    .resumen-compra {
+        width: 100%;
+
+        padding: 22px 18px;
+
+        gap: 15px;
+    }
+
+    .resumen-compra h1 {
+        font-size: 22px;
+    }
+
+    .resumen-compra p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* FORMULARIO */
+
+    .formulario-compra {
+        width: 100%;
+
+        padding: 22px 18px;
+
+        gap: 13px;
+    }
+
+    .formulario-compra h2 {
+        font-size: 21px;
+    }
+
+    .formulario-compra input {
+        width: 100%;
+        height: 43px;
+    }
+
+    .formulario-compra button {
+        width: 100%;
+        height: 46px;
+
+        font-size: 14px;
+    }
+
+
+    /* CONFIRMACIÓN */
+
+    .confirmacion {
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    .exito h1 {
+        font-size: 24px;
+    }
+
+    .exito p {
+        font-size: 14px;
+    }
+
+
+    /* TICKET */
+
+    .ticket {
+        width: 100%;
+
+        padding: 20px 15px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .datos-ticket {
+        width: 100%;
+    }
+
+    .datos-ticket h2 {
+        font-size: 21px;
+    }
+
+    .datos-ticket p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .ticket img {
+        width: 100%;
+        height: 300px;
+
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    /* BOTÓN VOLVER */
+
+    .volver {
+        width: 100%;
+    }
+
+}
+
 .pagina-compras {
     width: 100%;
-    min-height: auto;
-    padding: 30px 16px;
-    background: #111417;
-    color: white;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 70px 8%;
+
+    background-color: #111417;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    gap: 40px;
+}
+
+
+/* RESUMEN DE COMPRA */
+
+.resumen-compra {
+    width: 450px;
+    padding: 30px;
+
+    background-color: #1f354e;
+    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+
+    gap: 18px;
 }
 
-
-.resumen-compra,
-.formulario-compra,
-.confirmacion {
-    width: 100%;
-    max-width: 900px;
-}
-
-.resumen-compra,
-.formulario-compra {
-    background: #1a2027;
-    border: 1px solid #28343c;
-    border-radius: 16px;
-    padding: 22px;
-}
-
-.resumen-compra h1,
-.formulario-compra h2 {
-    color: #00DBE7;
-    margin-bottom: 18px;
+.resumen-compra h1 {
+    color: #00dbe7;
+    font-size: 25px;
 }
 
 .resumen-compra p {
-    color: #ddd;
-    line-height: 1.8;
+    color: #dddddd;
+    font-size: 16px;
 }
 
+.resumen-compra strong {
+    color: #ffffff;
+}
+
+
+/* FORMULARIO */
+
 .formulario-compra {
+    width: 450px;
+    padding: 30px;
+
+    background-color: #1f354e;
+    border-radius: 15px;
+
     display: flex;
     flex-direction: column;
+
+    gap: 15px;
+}
+
+.formulario-compra h2 {
+    color: #00dbe7;
+    margin-bottom: 10px;
 }
 
 .formulario-compra label {
-    margin: 14px 0 6px;
-    color: #ddd;
-    font-weight: 700;
+    color: #dddddd;
+    font-size: 14px;
 }
 
 .formulario-compra input {
     width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 8px;
+    height: 45px;
+    padding: 0 15px;
+
+    background-color: #152941;
+    color: #ffffff;
+
+    border: 1px solid #3d5364;
+    border-radius: 6px;
+
     outline: none;
+}
+
+.formulario-compra input:focus {
+    border-color: #00dbe7;
 }
 
 .formulario-compra button {
     width: 100%;
     height: 48px;
-    margin-top: 20px;
-    background: #00DBE7;
+
+    margin-top: 10px;
+
+    background-color: #00dbe7;
     color: #111417;
+
     border: none;
-    border-radius: 8px;
-    font-weight: 900;
+    border-radius: 6px;
+
+    font-size: 15px;
+    font-weight: bold;
+
     cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.formulario-compra button:hover {
+    background-color: #d81d87;
+    color: #ffffff;
 }
 
 
+/* CONFIRMACIÓN */
 
 .confirmacion {
-    display: none;
+    width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
 }
 
 .exito {
+    width: 100%;
     text-align: center;
-    margin-bottom: 25px;
 }
 
 .centro {
     width: 55px;
     height: 55px;
+
     margin: 0 auto 15px;
 
-    background: #00DBE7;
+    background-color: #00dbe7;
     color: #111417;
 
     border-radius: 8px;
@@ -95,109 +274,183 @@
     align-items: center;
 
     font-size: 34px;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .exito h1 {
-    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 
 .exito p {
-    color: #bbb;
-    margin-top: 10px;
+    color: #bbbbbb;
 }
 
 
+/* TICKET */
+
 .ticket {
-    width: 100%;
-    background: #1a2027;
-    border: 1px solid #28343c;
-    border-radius: 16px;
-    padding: 22px;
+    width: 700px;
+    padding: 25px;
+
+    background-color: #1f354e;
+    border-radius: 15px;
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 22px;
+
+    gap: 30px;
 }
 
 .datos-ticket {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
 }
 
 .datos-ticket h2 {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 15px;
+    color: #00dbe7;
 }
 
 .datos-ticket p {
-    color: #ddd;
-    line-height: 1.8;
+    color: #dddddd;
 }
 
 .ticket img {
-    width: 170px;
-    height: 230px;
+    width: 220px;
+    height: 280px;
+
     object-fit: cover;
+
     border-radius: 10px;
 }
 
 
-
-.qr {
-    width: 150px;
-    height: 150px;
-
-    background: white;
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.qr img {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-}
-
+/* VOLVER */
 
 .volver {
-    width: 100%;
-    max-width: 220px;
-    height: 50px;
+    width: 250px;
+    padding: 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 20px;
-
-    background: #00DBE7;
+    background-color: #00dbe7;
     color: #111417;
 
     text-decoration: none;
-    font-weight: 700;
+    text-align: center;
+    font-weight: bold;
+
     border-radius: 6px;
 }
 
-
-
-@media (min-width: 768px) {
-
+.volver:hover {
+    background-color: #d81d87;
+    color: #ffffff;
+}
+/* =========================================================
+   RESPONSIVE DESIGN — MÓVILES DE HASTA 375 PX
+   Este bloque debe permanecer al final del archivo.
+========================================================= */
+@media screen and (max-width: 375px) {
     .pagina-compras {
-        padding: 70px 8%;
+        width: 100%;
+        min-height: 100vh;
+        padding: 28px 12px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        overflow-x: hidden;
+    }
+
+    .resumen-compra,
+    .formulario-compra {
+        width: 100%;
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .resumen-compra {
+        gap: 14px;
+    }
+
+    .resumen-compra h1 {
+        font-size: 21px;
+    }
+
+    .resumen-compra p {
+        font-size: 13px;
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+    }
+
+    .formulario-compra {
+        gap: 12px;
+    }
+
+    .formulario-compra h2 {
+        font-size: 20px;
+    }
+
+    .formulario-compra input {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .formulario-compra button {
+        width: 100%;
+        min-height: 46px;
+        font-size: 14px;
+    }
+
+    .confirmacion {
+        width: 100%;
+        gap: 22px;
+    }
+
+    .exito h1 {
+        font-size: 23px;
+    }
+
+    .exito p {
+        font-size: 13px;
+        line-height: 1.5;
     }
 
     .ticket {
-        flex-direction: row;
-        align-items: flex-start;
+        width: 100%;
+        padding: 18px 15px;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 18px;
     }
 
     .datos-ticket {
-        flex: 1;
+        width: 100%;
+        gap: 10px;
     }
 
+    .datos-ticket h2 {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .datos-ticket p {
+        font-size: 13px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .ticket img {
+        width: 100%;
+        height: 260px;
+        object-position: center 25%;
+    }
+
+    .volver {
+        width: 100%;
+        min-height: 46px;
+        padding: 13px 10px;
+    }
 }

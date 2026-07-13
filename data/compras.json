@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1783912924826,
+    "peliculaId": 1,
+    "pelicula": "ZEUS: ASCENSIÓN DIGITAL",
+    "foto": "img/foto1.png",
+    "sala": "IMAX 3D",
+    "fecha": "15",
+    "hora": "14:30",
+    "asientos": [
+      "A1"
+    ],
+    "total": 35,
+    "nombre": "angelo",
+    "correo": "an@hotmail.com",
+    "telefono": "545",
+    "fechaRegistro": "2026-07-13T03:22:04.826Z"
+  },
+  {
+    "id": 1783913459025,
+    "peliculaId": 2,
+    "pelicula": "ATENEA: CÓDIGO DIVINO",
+    "foto": "img/foto2.png",
+    "sala": "DIGITAL 2D",
+    "fecha": "19",
+    "hora": "12:40",
+    "asientos": [
+      "A1"
+    ],
+    "total": 25,
+    "nombre": "angelo",
+    "correo": "an@hotmail.com",
+    "telefono": "545",
+    "fechaRegistro": "2026-07-13T03:30:59.025Z"
+  },
+  {
+    "id": 1783913481077,
+    "peliculaId": 2,
+    "pelicula": "ATENEA: CÓDIGO DIVINO",
+    "foto": "img/foto2.png",
+    "sala": "DIGITAL 2D",
+    "fecha": "19",
+    "hora": "22:40",
+    "asientos": [
+      "A1"
+    ],
+    "total": 25,
+    "nombre": "angelo",
+    "correo": "an@hotmail.com",
+    "telefono": "545",
+    "fechaRegistro": "2026-07-13T03:31:21.077Z"
+  },
+  {
+    "id": 1783914072881,
+    "peliculaId": 3,
+    "pelicula": "POSEIDÓN: ABISMO NEURAL",
+    "foto": "img/foto3.png",
+    "sala": "IMAX 3D",
+    "fecha": "15",
+    "hora": "15:10",
+    "asientos": [
+      "A1"
+    ],
+    "total": 35,
+    "nombre": "angelo",
+    "correo": "an@hotmail.com",
+    "telefono": "545",
+    "fechaRegistro": "2026-07-13T03:41:12.882Z"
+  }
+]

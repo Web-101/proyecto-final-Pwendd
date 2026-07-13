@@ -1,168 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cartelera de Cine</title>
 
     <link rel="stylesheet" href="css/index.css">
-    <title>Documento</title>
 </head>
 
 <body>
 
     <div id="header"></div>
 
-
-
-    <main class="principal">
+    <main id="inicio" class="principal">
 
         <section class="caja-principal">
-            <article class="contenedor-centro">
-                <button class="boton1">Reservar entrada</button>
 
-                <h2>ZEUS: ASCENSIÓN <span class="cambiar-color">DIGITAL</span></h2>
+            <article class="contenedor-centro">
+
+                <h1>
+                    ZEUS: ASCENSIÓN
+                    <span class="cambiar-color">
+                        DIGITAL
+                    </span>
+                </h1>
+
                 <p>
-                    Presencia la singularidad del Rey de los Dioses. En un mundo donde
-                    el mito y la máquina se fusionan, Zeus se alza no desde el cielo,
-                    sino desde el núcleo de la unidad central universal.
+                    Presencia la singularidad del Rey de los
+                    Dioses. En un mundo donde el mito y la
+                    máquina se fusionan, Zeus se alza desde el
+                    núcleo de la unidad central universal.
                 </p>
 
                 <section class="titulo-contenedor-botones">
-                    <a href="comprar.html" class="menu botones-centro">COMPRAR ENTRADAS</a>
 
-                    <a href="trailes.html" class="menu">VER TRAILES</a>
+                    <a href="detalle.html?id=1" class="menu botones-centro">
+                        COMPRAR ENTRADAS
+                    </a>
+
+                    <a href="detalle.html?id=1" class="menu">
+                        VER DETALLE
+                    </a>
+
                 </section>
+
             </article>
+
         </section>
 
+        <section id="panteones" class="caja-subprincipal">
 
-        <article id="deidades" class="caja-subprincipal">
-            <section class="caja-titulo">
+            <header class="caja-titulo">
                 <h2>PANTEONES ACTUALES</h2>
-            </section>
-            <section class="carteleras">
+            </header>
 
-                <article class="cartelera foto-1">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>CINE DE CULTO</h3>
-                            <h2>ZEUS</h2>
-                            <h4>ASVENSION DIGITAL</h4>
-                        </div>
-                        <a href="detalle.html?id=1" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
+            <section id="carteleras" class="carteleras"></section>
 
-                <article class="cartelera foto-2">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>PROTOCOLO DE DATOS</h3>
-                            <h2>ATHENA</h2>
-                            <h4>SABIDURIA CUANTICA</h4>
-                        </div>
-                        <a href="detalle.html?id=2" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
+        </section>
 
-                <article class="cartelera foto-3">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>REINO SUBMARINO</h3>
-                            <h2>POSEIDON</h2>
-                            <h4>CORRIENTE PROFUNDA</h4>
-                        </div>
-                        <a href="detalle.html?id=3" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-
-                <article class="cartelera foto-4">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>ACACERIA BIO-DIGITAL</h3>
-                            <h2>ARTEMISA</h2>
-                            <h4>BIO-CAZADORA</h4>
-                        </div>
-                        <a href="detalle.html?id=4" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-
-                <article class="cartelera foto-5">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>PROTOCOLO BELICO</h3>
-                            <h2>ARES</h2>
-                            <h4>VANGUARDIA MECH</h4>
-                        </div>
-                        <a href="detalle.html?id=5" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-
-                <article class="cartelera foto-6">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>ESTETICA NEON</h3>
-                            <h2>AFRODITA</h2>
-                            <h4>DESEO SINTETICO</h4>
-                        </div>
-                        <a href="detalle.html?id=6" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-
-                <article class="cartelera foto-7">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>TRANSMISION VELOZ</h3>
-                            <h2>HERMES</h2>
-                            <h4>MENSAJERO DE DATOS</h4>
-                        </div>
-                        <a href="detalle.html?id=7" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-
-                <article class="cartelera foto-8">
-                    <section class="cartelera-header">
-                        <h3>EN CARTELERA</h3>
-                    </section>
-                    <section class="cartelera-contenido">
-                        <div class="cartelera-info">
-                            <h3>VELOZ NEON</h3>
-                            <h2>POPEYE</h2>
-                            <h4>ASVENSION RAPIDA</h4>
-                        </div>
-                        <a href="detalle.html?id=8" class="button-centro">RESERVAR ENTRADA</a>
-                    </section>
-                </article>
-            </section>
-        </article>
     </main>
 
-
-
     <div id="footer"></div>
-
-
 
     <script src="js/index.js"></script>
 
