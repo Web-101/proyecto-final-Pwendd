@@ -1,117 +1,64 @@
-async function cargarComponente(ruta, elementoId) {
-    const contenedor = document.getElementById(elementoId);
+function cargarComponentes() {
 
-    if (!contenedor) {
-        return;
-    }
+    fetch("componentes/header.html")
+        .then(function (respuesta) {
+            return respuesta.text();
+        })
+        .then(function (contenidoHeader) {
+            document.getElementById("header").innerHTML =
+                contenidoHeader;
+        });
 
-    try {
-        const respuesta = await fetch(ruta);
 
-        if (!respuesta.ok) {
-            throw new Error(
-                "No se pudo cargar el componente: " + ruta
-            );
-        }
-
-        contenedor.innerHTML = await respuesta.text();
-    } catch (error) {
-        console.error(error);
-
-        contenedor.innerHTML =
-            "<p>No se pudo cargar este componente.</p>";
-    }
+    fetch("componentes/footer.html")
+        .then(function (respuesta) {
+            return respuesta.text();
+        })
+        .then(function (contenidoFooter) {
+            document.getElementById("footer").innerHTML =
+                contenidoFooter;
+        });
 }
 
-async function cargarComponentes() {
-    await Promise.all([
-        cargarComponente(
-            "componentes/header.html",
-            "header"
-        ),
-        cargarComponente(
-            "componentes/footer.html",
-            "footer"
-        )
-    ]);
-}
 
 async function cargarPeliculas() {
-    const contenedor =
-        document.getElementById("carteleras");
 
-    if (!contenedor) {
-        return;
-    }
+    const respuesta =
+        await fetch("/api/cartelera");
 
-    try {
-        const respuesta = await fetch("/api/cartelera");
+    const peliculas =
+        await respuesta.json();
 
-        if (!respuesta.ok) {
-            throw new Error(
-                "No se pudo cargar la cartelera."
-            );
-        }
+    const tarjetas =
+        document.querySelectorAll(".cartelera");
 
-        const peliculas = await respuesta.json();
 
-        contenedor.innerHTML = "";
+    tarjetas.forEach(function (tarjeta, posicion) {
 
-        peliculas.forEach(function (pelicula) {
-            const tarjeta =
-                document.createElement("article");
+        const pelicula =
+            peliculas[posicion];
 
-            tarjeta.className = "cartelera";
+        tarjeta.style.backgroundImage =
+            "url('" + pelicula.foto + "')";
 
-            tarjeta.style.backgroundImage =
-                "url('" + pelicula.foto + "')";
+        tarjeta.querySelector(".genero").textContent =
+            pelicula.genero;
 
-            tarjeta.innerHTML = `
-                <section class="cartelera-header">
-                    <h3>EN CARTELERA</h3>
-                </section>
+        tarjeta.querySelector(".titulo").textContent =
+            pelicula.nombre;
 
-                <section class="cartelera-contenido">
-                    <div class="cartelera-info">
-                        <h3 class="genero"></h3>
-                        <h2 class="titulo"></h2>
-                        <h4 class="audio"></h4>
-                    </div>
+        tarjeta.querySelector(".audio").textContent =
+            pelicula.calificacion +
+            " · " +
+            pelicula.audio;
 
-                    <a class="button-centro">
-                        RESERVAR ENTRADA
-                    </a>
-                </section>
-            `;
-
-            tarjeta.querySelector(".genero").textContent =
-                pelicula.genero;
-
-            tarjeta.querySelector(".titulo").innerHTML =
-                pelicula.titulo;
-
-            tarjeta.querySelector(".audio").textContent =
-                pelicula.calificacion +
-                " · " +
-                pelicula.audio;
-
-            tarjeta.querySelector(".button-centro").href =
-                "detalle.html?id=" +
-                encodeURIComponent(pelicula.id);
-
-            contenedor.appendChild(tarjeta);
-        });
-    } catch (error) {
-        console.error(error);
-
-        contenedor.innerHTML = `
-            <p class="mensaje-error">
-                No se pudo cargar la cartelera.
-                Verifica que el servidor esté funcionando.
-            </p>
-        `;
-    }
+        tarjeta.querySelector(".button-centro").href =
+            "detalle.html?id=" +
+            pelicula.id;
+    });
 }
 
+
 cargarComponentes();
+
 cargarPeliculas();
