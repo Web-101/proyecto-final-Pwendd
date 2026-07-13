@@ -4,6 +4,259 @@
     box-sizing: border-box;
 }
 
+.pagina-butaca {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 60px 10%;
+
+    background-color: #12181f;
+    color: #ffffff;
+}
+
+
+
+
+.titulo-butaca {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-butaca span {
+    color: #00dbe7;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-butaca h1 {
+    margin-top: 8px;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.titulo-butaca p {
+    margin-top: 8px;
+    color: #bbbbbb;
+}
+
+
+.zona-butacas {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+
+.sala {
+    width: 560px;
+    padding: 25px;
+
+    background-color: #152941;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pantalla {
+    width: 100%;
+    height: 36px;
+
+    margin-bottom: 25px;
+
+    background-color: #00dbe7;
+    color: #111417;
+
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.mapa {
+    width: 462px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+
+    gap: 14px;
+}
+
+
+
+
+.butaca {
+    width: 42px;
+    height: 36px;
+
+    border: 1px solid #00dbe7;
+    border-radius: 6px;
+
+    background-color: #1d2a2e;
+    color: #00dbe7;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.butaca:hover {
+    background-color: #00dbe7;
+    color: #111417;
+}
+
+
+.butaca.seleccionada {
+    background-color: #d81d87;
+    border-color: #d81d87;
+    color: #ffffff;
+}
+
+
+.butaca.ocupada {
+    background-color: #666666;
+    border-color: #666666;
+    color: #222222;
+
+    cursor: not-allowed;
+}
+
+.butaca.ocupada:hover {
+    background-color: #666666;
+    color: #222222;
+}
+
+
+
+.leyenda {
+    width: 100%;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.leyenda div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+    color: #dddddd;
+}
+
+.estado {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 3px;
+}
+
+.estado.libre {
+    background-color: #00dbe7;
+}
+
+.estado.seleccionada {
+    background-color: #d81d87;
+}
+
+.estado.ocupada {
+    background-color: #666666;
+}
+
+
+.resumen-butaca {
+    width: 320px;
+    padding: 22px;
+
+    background-color: #1f354e;
+
+    border-radius: 16px;
+}
+
+.resumen-butaca img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.resumen-butaca h2 {
+    color: #00dbe7;
+
+    margin-bottom: 8px;
+}
+
+.resumen-butaca p {
+    color: #dddddd;
+
+    line-height: 26px;
+}
+
+
+
+.resumen-butaca button {
+    width: 100%;
+    height: 45px;
+
+    margin-top: 15px;
+
+    background-color: #00dbe7;
+    color: #111417;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.resumen-butaca button:hover {
+    background-color: #d81d87;
+    color: #ffffff;
+}
+
+.resumen-butaca button:disabled {
+    background-color: #666666;
+    color: #aaaaaa;
+
+    cursor: not-allowed;
+}
+
+/* =========================
+   PANTALLA DE 375PX
+========================= */
+
 @media (max-width: 375px) {
 
     .pagina-butaca {
@@ -113,380 +366,4 @@
         height: 45px;
     }
 
-}
-
-.pagina-butaca {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 60px 10%;
-
-    background-color: #12181f;
-    color: #ffffff;
-}
-
-
-/* TÍTULO */
-
-.titulo-butaca {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.titulo-butaca span {
-    color: #00dbe7;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.titulo-butaca h1 {
-    margin-top: 8px;
-    font-size: 38px;
-    color: #ffffff;
-}
-
-.titulo-butaca p {
-    margin-top: 8px;
-    color: #bbbbbb;
-}
-
-
-/* ZONA DE BUTACAS */
-
-.zona-butacas {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-    gap: 50px;
-}
-
-
-/* SALA */
-
-.sala {
-    width: 560px;
-    padding: 25px;
-
-    background-color: #152941;
-    border-radius: 16px;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* PANTALLA */
-
-.pantalla {
-    width: 100%;
-    height: 36px;
-
-    margin-bottom: 25px;
-
-    background-color: #00dbe7;
-    color: #111417;
-
-    border-radius: 25px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-weight: bold;
-}
-
-
-/* MAPA DE BUTACAS */
-
-.mapa {
-    width: 462px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
-    gap: 14px;
-}
-
-
-/* BUTACA */
-
-.butaca {
-    width: 42px;
-    height: 36px;
-
-    border: 1px solid #00dbe7;
-    border-radius: 6px;
-
-    background-color: #1d2a2e;
-    color: #00dbe7;
-
-    cursor: pointer;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 12px;
-    font-weight: bold;
-
-    transition: 0.3s;
-}
-
-.butaca:hover {
-    background-color: #00dbe7;
-    color: #111417;
-}
-
-
-/* BUTACA SELECCIONADA */
-
-.butaca.seleccionada {
-    background-color: #d81d87;
-    border-color: #d81d87;
-    color: #ffffff;
-}
-
-
-/* BUTACA OCUPADA */
-
-.butaca.ocupada {
-    background-color: #666666;
-    border-color: #666666;
-    color: #222222;
-
-    cursor: not-allowed;
-}
-
-.butaca.ocupada:hover {
-    background-color: #666666;
-    color: #222222;
-}
-
-
-/* LEYENDA */
-
-.leyenda {
-    width: 100%;
-    margin-top: 25px;
-
-    display: flex;
-    justify-content: center;
-
-    gap: 30px;
-}
-
-.leyenda div {
-    display: flex;
-    align-items: center;
-
-    gap: 8px;
-
-    font-size: 14px;
-    color: #dddddd;
-}
-
-.estado {
-    width: 14px;
-    height: 14px;
-
-    border-radius: 3px;
-}
-
-.estado.libre {
-    background-color: #00dbe7;
-}
-
-.estado.seleccionada {
-    background-color: #d81d87;
-}
-
-.estado.ocupada {
-    background-color: #666666;
-}
-
-
-/* RESUMEN */
-
-.resumen-butaca {
-    width: 320px;
-    padding: 22px;
-
-    background-color: #1f354e;
-
-    border-radius: 16px;
-}
-
-.resumen-butaca img {
-    width: 100%;
-    height: 200px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    margin-bottom: 15px;
-}
-
-.resumen-butaca h2 {
-    color: #00dbe7;
-
-    margin-bottom: 8px;
-}
-
-.resumen-butaca p {
-    color: #dddddd;
-
-    line-height: 26px;
-}
-
-
-/* BOTÓN */
-
-.resumen-butaca button {
-    width: 100%;
-    height: 45px;
-
-    margin-top: 15px;
-
-    background-color: #00dbe7;
-    color: #111417;
-
-    border: none;
-    border-radius: 8px;
-
-    font-size: 15px;
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.resumen-butaca button:hover {
-    background-color: #d81d87;
-    color: #ffffff;
-}
-
-.resumen-butaca button:disabled {
-    background-color: #666666;
-    color: #aaaaaa;
-
-    cursor: not-allowed;
-}
-/* =========================================================
-   RESPONSIVE DESIGN — MÓVILES DE HASTA 375 PX
-   Este bloque debe permanecer al final del archivo.
-========================================================= */
-@media screen and (max-width: 375px) {
-    .pagina-butaca {
-        width: 100%;
-        padding: 28px 8px;
-        overflow-x: hidden;
-    }
-
-    .titulo-butaca {
-        margin-bottom: 22px;
-        padding: 0 8px;
-    }
-
-    .titulo-butaca span {
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
-
-    .titulo-butaca h1 {
-        font-size: 24px;
-        line-height: 1.2;
-        overflow-wrap: anywhere;
-    }
-
-    .titulo-butaca p {
-        font-size: 13px;
-        line-height: 1.45;
-    }
-
-    .zona-butacas {
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
-    }
-
-    .sala {
-        width: 100%;
-        padding: 14px 8px;
-        border-radius: 12px;
-    }
-
-    .pantalla {
-        height: 32px;
-        margin-bottom: 16px;
-        font-size: 12px;
-    }
-
-    .mapa {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
-        gap: 5px;
-    }
-
-    .butaca {
-        width: 100%;
-        min-width: 0;
-        height: 31px;
-        font-size: 8px;
-        border-radius: 4px;
-    }
-
-    .leyenda {
-        margin-top: 18px;
-        flex-wrap: wrap;
-        gap: 10px 14px;
-    }
-
-    .leyenda div {
-        font-size: 10px;
-        gap: 5px;
-    }
-
-    .estado {
-        width: 11px;
-        height: 11px;
-    }
-
-    .resumen-butaca {
-        width: 100%;
-        padding: 18px;
-        border-radius: 12px;
-    }
-
-    .resumen-butaca img {
-        width: 100%;
-        height: 190px;
-        object-position: center 25%;
-    }
-
-    .resumen-butaca h2 {
-        font-size: 21px;
-        overflow-wrap: anywhere;
-    }
-
-    .resumen-butaca p {
-        font-size: 13px;
-        line-height: 1.6;
-        overflow-wrap: anywhere;
-    }
-
-    .resumen-butaca button {
-        min-height: 46px;
-        font-size: 14px;
-    }
 }
